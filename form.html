@@ -11,14 +11,34 @@
         <input required type="text" id="username" name="username">
         <br>
         <label for="age">使用者年齡:</label>
-        <input type="number" id="age" name="age">
+        <input type="number" id="age" name="age" min="0" max="100">
         <br>
         <label for="email">使用者信箱:</label>
         <input required type="email" id="email" name="email">
         <br>
         <label for="password">使用者密碼:</label>
         <input placeholder="請輸入6-8不重複的字元" type="password" id="password" name="password">
+        <br>
+        <label for="phone">使用者電話:</label>
+        <input placeholder="請輸入手機號碼10碼" type="tel" id="phone" name="phone">
+        <br>
+        <label for="phone">性別:</label>
+        <input type="radio" id="gender" name="gender" value="male" checked>男
+        <input type="radio" id="gender" name="gender" value="female">女   
+        <br>
+        <label for="today">建 立 日 期 :</label>
+        <input type="date">
+        <br><br>
+        <input required type="checkbox" id="agree" name="agree">
+        <label for="agree">我同意條款</label>
+        <br>
         <button type="submit">註冊</button>
+        <hr>
+        <h2>其他功能</h2>
+        <br>
+        <input type="range" min="0" max="100" value="80"><br>
+        <input type="color"><br>
+        <input type="file"><br>
 
 
     </form>
